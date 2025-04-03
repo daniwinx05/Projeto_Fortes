@@ -1,0 +1,135 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background-color: #f4f4f4;
+    
+}
+
+.header {
+    display: flex;
+    color: white;
+    justify-content: center;   
+}
+
+.logo {
+    margin-top: 10px;
+}
+.botao-home, .botao-ajuda{
+    background-color: #11538C;
+    color: white;
+    font-size: medium;
+    width: 500px;
+    height: 50px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+h1 {
+    border-radius: 8px;
+    width: 400px;
+    margin-bottom: 10px;
+    color: rgb(3, 29, 46);
+    text-shadow: rgb(3, 29, 46);
+    text-align: left;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.container {
+    background-color: rgba(77, 101, 131);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgb(10, 56, 95);
+    width: 400px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 18px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #6ED9AD;
+}
+
+.icone {
+    color: #6ED9AD;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+.button {
+    background-color: #6ED9AD;
+    color: #1b3329;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: auto;
+    margin: 0 auto;
+
+}
+
+.button:hover {
+    background-color: #5eb993;
+}
+
+.forgot-password {
+    margin-bottom: 10px;
+    color: #6ED9AD;
+    text-decoration: none;
+    display: block;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar a {
+        margin: 5px 0;
+    }
+}
